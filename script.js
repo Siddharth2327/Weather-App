@@ -20,7 +20,7 @@ function search(e){
 
 async function fetchData(target){
     try{
-        const url = `http://api.weatherapi.com/v1/current.json?key=20c6ec8c38b34a1baa5182722241812&q=${target}&aqi=yes`;// template literals 
+        const url = `https://api.weatherapi.com/v1/current.json?key=20c6ec8c38b34a1baa5182722241812&q=${target}&aqi=yes`;// template literals 
         const response = await fetch(url) // this gives the op indirectly inside as an object  
         const data = await response.json() // to convert it to json format and unlock the data then it also converts back to js object
         console.log(data)
